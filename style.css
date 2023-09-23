@@ -142,5 +142,42 @@ a:focus, a:hover {
  }
 
  .toggle-text {
-    
+    position: relative;
+    top: -4px;
+    right: 5px;
+    color: var(--on-background);
  }
+
+ .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+ }
+
+ .theme-switch input {
+    display: none;
+ }
+
+ .slider {
+    background: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+ }
+ .slider::before {
+    content: '';
+    background: #fff;
+    bottom: 4px;
+    height: 25px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 25px;
+ }
+
+ 
